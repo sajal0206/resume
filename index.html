@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Sajal Chandaiya" content="Author">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="jQuery/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="profile.jpg">
+    <title>Sajal Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <ul>
+                <li><a href="#" id="icn">
+                        <p>S</p>
+                    </a></li>
+                <li id="Sbtn"><input id="Sfill" type="text" value="Only For Display"><i id="SbtnS" class="fas fa-search"
+                        aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="icons">
+            <ul>
+                <li class="active" id="one"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                <li id="two"><a href="#"><i class="fa fa-play" aria-hidden="true"></i></a></li>
+                <li id="three"><a href="#"><i class="fa fa-store" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="dp"><img src="profile.jpg" alt="Sajal Profile">Sajal</div>
+        <div class="Ricons">
+            <ul>
+                <li><i id="Nbtn" class="fas fa-bell" aria-hidden="true"></i></li>
+                <li><i id="Pbtn" class="fa fa-sort-down" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="rightBox" id="notifications">
+        <span class="back" id="back1"><i class="fas fa-arrow-left"></i></span>
+        <h2>Notifications</h2>
+        <br>
+        <p class="heading">New</p>
+        <p class="note">
+        <ul class="notices">
+            <li><img src="profile.jpg" alt="Profile Photo">Your profile photo updated successfully.</li>
+            <small>5 hours ago</small>
+        </ul>
+        <ul class="notices">
+            <li><img src="Edureka.jpg" alt="Profile Photo">Your Edureka certificate uploaded successfully.</li>
+            <small>3 days ago</small>
+        </ul>
+        <ul class="notices">
+            <li><img src="HTML.jpg" alt="Profile Photo">Your LumosLearning HTML certificate uploaded
+                successfully.</li>
+            <small>5 days ago</small>
+        </ul>
+        <ul class="notices">
+            <li><img src="HackerRank.jpg" alt="Profile Photo">Your Hacker Rank certificate uploaded successfully.
+            </li>
+            <small>6 days ago</small>
+        </ul>
+        <ul class="notices">
+            <li><img src="AWS.jpg" alt="Profile Photo">Your AWS certificate uploaded successfully.</li>
+            <small>1 week ago</small>
+        </ul>
+        </p>
+        <br>
+        <p class="heading">Earlier</p>
+        <p class="note">
+        <ul class="notices">
+            <li><img src="profile.jpg" alt="Profile Photo">Your ITI MArksheet Uploaded successfully.</li>
+            <small>1 month ago</small>
+        </ul>
+        <ul class="notices">
+            <li><img src="Common_carder_bee.jpg" alt="Profile Photo">You have successfully updated your profile
+                background.</li>
+            <small>2 years ago</small>
+        </ul>
+        </p>
+    </div>
+    <div class="rightBox" id="profile">
+        <span class="back" id="back2"><i class="fas fa-arrow-left"></i></span>
+        <a>
+            <div class="dp"><img src="profile.jpg" alt="Sajal Profile">Sajal Chandaiya</div>
+        </a>
+        <hr>
+        <ul class="profilebox">
+            <li id="theme"><i class="fas fa-moon"><i class="fas fa-sun"></i></i>Switch Theme</li>
+            <hr>
+            <li><i class="fas fa-question-circle"></i>Help & Support</li>
+            <li><i class="fas fa-user-lock"></i>Privacy & Security</li>
+            <li id="logout" onclick="window.close()"><i class="fas fa-power-off"
+                    title="after clicking current tab will be get closed"></i>Log Out</li>
+        </ul>
+    </div>
+    <div class="rightBox" id="info">
+        <span class="back" id="back3"><i class="fas fa-arrow-left"></i></span>
+        <div class="upper">
+            <ul>
+                <li><i class="fas fa-user-graduate"></i> Name - Sajal Chandaiya</li>
+                <li><i class="fas fa-user-graduate"></i> Enrollment No. - <small>19100BTCSES05392</small></li>
+                <li><i class="fas fa-graduation-cap"></i> Branch - B.Tech</li>
+                <li><i class="fas fa-graduation-cap"></i> Department - C.S.E.(Red Hat)</li>
+                <li><i class="fas fa-phone"></i> Phone Number - 9260960454</li>
+                <li><i class="fas fa-envelope"></i> Mail Id - <small>guptasajal0206@gmail.com</small></li>
+                <li><i class="fas fa-map-signs"></i> Address - 65, Surya Nagar, Orai, Jalaun, Uttar Pradesh.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <h1 class="topHeading">My Profile</h1>
+        <div class="profileBack" id="profileBackImage"><img src="Common_carder_bee.jpg" alt="Profie Background">
+        </div>
+        <div class="fix">
+            <div class="profileimg" id="profileimg">
+                <img src="profile.jpg" alt="Profile Photo">
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <h1 class="heading">Highlights</h1>
+            <b class="highlight"><i class="fas fa-graduation-cap"></i> Selected as The Red Hat Student Ambassador From
+                The University.</b>
+            <span id="cNewThree" class="count"><i class="fas fa-thumbs-up"></i> 0</span>
+            <ul class="cardBottom">
+                <li id="lNewThree"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentNewThree"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="commentNew3" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div>
+        <div class="extraLeft">
+            <ul>
+                <li><i class="fas fa-user-graduate"></i> Name - Sajal Chandaiya</li>
+                <li><i class="fas fa-user-graduate"></i> Enrollment No. - <small>19100BTCSES05392</small></li>
+                <li><i class="fas fa-graduation-cap"></i> Branch - B.Tech</li>
+                <li><i class="fas fa-graduation-cap"></i> Department - C.S.E.(Red Hat)</li>
+                <li><i class="fas fa-phone"></i> Phone Number - 9260960454</li>
+                <li><i class="fas fa-envelope"></i> Mail Id - <small>guptasajal0206@gmail.com</small></li>
+                <li><i class="fas fa-map-signs"></i> Address - 65, Surya Nagar, Orai, Jalaun, Uttar Pradesh.</li>
+            </ul>
+        </div>
+        <div class="extraRight">
+            <h1 class="heading">Hobbies</h1>
+            <ul>
+                <li><i class="fas fa-swimming-pool"></i> Swimming</li>
+                <li><i class="fas fa-user-ninja"></i> Karate</li>
+                <li><i class="fas fa-user-ninja"></i> Judo</li>
+                <li><i class="fas fa-user-ninja"></i> Gymnastics</li>
+                <li><i class="fas fa-user-ninja"></i> Taekwondo</li>
+                <li><i class="fas fa-microphone"></i> Singing</li>
+                <li><i class="fas fa-sun"></i> Yoga</li>
+            </ul>
+        </div>
+        <div class="card hiddenCard">
+            <div class="hiddenExtraLeft">
+                <ul>
+                    <li><i class="fas fa-user-graduate"></i> Name - Sajal Chandaiya</li>
+                    <li><i class="fas fa-user-graduate"></i> Enrollment No. - <small>19100BTCSES05392</small></li>
+                    <li><i class="fas fa-graduation-cap"></i> Branch - B.Tech</li>
+                    <li><i class="fas fa-graduation-cap"></i> Department - C.S.E.(Red Hat)</li>
+                    <li><i class="fas fa-phone"></i> Phone Number - 9260960454</li>
+                    <li><i class="fas fa-envelope"></i> Mail Id - <small>guptasajal0206@gmail.com</small></li>
+                    <li><i class="fas fa-map-signs"></i> Address - 65, Surya Nagar, Orai, Jalaun, Uttar Pradesh.</li>
+                </ul>
+            </div>
+            <div class="hiddenExtraRight">
+                <h1 class="heading">Hobbies</h1>
+                <ul>
+                    <li><i class="fas fa-swimming-pool"></i> Swimming</li>
+                    <li><i class="fas fa-user-ninja"></i> Karate</li>
+                    <li><i class="fas fa-user-ninja"></i> Judo</li>
+                    <li><i class="fas fa-user-ninja"></i> Gymnastics</li>
+                    <li><i class="fas fa-user-ninja"></i> Taekwondo</li>
+                    <li><i class="fas fa-microphone"></i> Singing</li>
+                    <li><i class="fas fa-sun"></i> Yoga</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <h2 class="heading">Education Details & Qualifications</h2>
+            <div class="education">
+                <table>
+                    <tbody>
+                        <tr id="fix">
+                            <th>S. No.</th>
+                            <th>Standard</th>
+                            <th>Session</th>
+                            <th>Percentage/CGPA</th>
+                        </tr>
+                        <tr>
+                            <th>1.</th>
+                            <td>10<sup>th</sup></td>
+                            <td>2015-2016</td>
+                            <td>9 CGPA</td>
+                        </tr>
+                        <tr>
+                            <th>2.</th>
+                            <td>12<sup>th</sup></td>
+                            <td>2017-2018</td>
+                            <td>77 %</td>
+                        </tr>
+                        <tr>
+                            <th>4.</th>
+                            <td>1<sup>st</sup> Semester</td>
+                            <td>December-2019</td>
+                            <td>7.790 CGPA</td>
+                        </tr>
+                        <tr>
+                            <th>5.</th>
+                            <td>2<sup>nd</sup> Semester</td>
+                            <td>June-2020</td>
+                            <td>8.2 CGPA</td>
+                        </tr>
+                        <tr>
+                            <th>6.</th>
+                            <td>3<sup>rd</sup> Semester</td>
+                            <td>December-2020</td>
+                            <td>8.670 CGPA</td>
+                        </tr>
+                        <tr>
+                            <th>7.</th>
+                            <td>4<sup>th</sup> Semester</td>
+                            <td>July-2021</td>
+                            <td>8.330 CGPA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <span id="cNewOne" class="count"><i class="fas fa-thumbs-up"></i> 0</span>
+            <ul class="cardBottom">
+                <li id="lNewOne"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentNewOne"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="commentNew1" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div>
+        <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <h2 class="heading">Skills & Certifications</h2>
+            <h3>Programming Languages</h3>
+            <div class="skills">
+                <ul>
+                    <li>Programming in C (Intermidiate)</li>
+                    <li>Core Java (Intermediate)</li>
+                    <li>HTML 5 (Advanced)</li>
+                    <li>CSS 3 (Intermediate)</li>
+                    <li>javaScript (Beginner)</li>
+                    <li>PHP (Intermediate)</li>
+                    <li>jQuery (Intermediate)</li>
+                    <li>AJAX (Beginner)</li>
+                    <li>Python (Intermediate)</li>
+                </ul>
+            </div>
+            <h3>Operating Systems</h3>
+            <div class="skills">
+                <ul>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <h3>Tools</h3>
+            <div class="skills">
+                <ul>
+                    <li>MS-Word</li>
+                    <li>MS-Power Point</li>
+                    <li>MS-Excel</li>
+                    <li>NetBeans</li>
+                    <li>VM-Ware</li>
+                    <li>Oracle Virtual Box</li>
+                </ul>
+            </div>
+            <h3>Other</h3>
+            <div class="skills">
+                <ul>
+                    <li>Sql</li>
+                    <li>MySql</li>
+                    <li>DBMS</li>
+                </ul>
+            </div>
+            <span id="cNewTwo" class="count"><i class="fas fa-thumbs-up"></i> 0</span>
+            <ul class="cardBottom">
+                <li id="lNewTwo"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentNewTwo"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="commentNew2" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div>
+        <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <img src="profile.jpg" alt="Profile Photo" id="pImage1">
+            <span id="cOne" class="count"><i class="fas fa-thumbs-up"></i> 0</span>
+            <ul class="cardBottom">
+                <li id="lOne"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentOne"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="comment1" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div>
+        <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <img src="Edureka.jpg" alt="Profile Photo" id="pImage2">
+            <span id="cTwo" class="count"><i class="fas fa-thumbs-up"></i> 1</span>
+            <ul class="cardBottom">
+                <li class="like" id="lTwo"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentTwo"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="comment2" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div>
+        <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <img src="HTML.jpg" alt="Profile Photo" id="pImage3">
+            <span id="cThree" class="count"><i class="fas fa-thumbs-up"></i> 1</span>
+            <ul class="cardBottom">
+                <li class="like" id="lThree"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentThree"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="comment3" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div>
+        <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <img src="HackerRank.jpg" alt="Profile Photo" id="pImage4">
+            <span id="cFour" class="count"><i class="fas fa-thumbs-up"></i> 1</span>
+            <ul class="cardBottom">
+                <li class="like" id="lFour"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentFour"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="comment4" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div>
+        <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <img src="AWS.jpg" alt="Profile Photo" id="pImage5">
+            <span id="cFive" class="count"><i class="fas fa-thumbs-up"></i> 0</span>
+            <ul class="cardBottom">
+                <li id="lFive"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentFive"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="comment5" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div>
+        <!-- <div class="card">
+            <div class="cardTop">
+                <ul>
+                    <li><img src="profile.jpg" alt="profile.jpg">Sajal Chandaiya</li>
+                </ul>
+            </div>
+            <img src="ITI Certificate.jpg" alt="Profile Photo" id="pImage6">
+            <span id="cSix" class="count"><i class="fas fa-thumbs-up"></i> 0</span>
+            <ul class="cardBottom">
+                <li id="lSix"><i class="fas fa-thumbs-up"></i>Like</li>
+                <li id="commentSix"><i class="fas fa-comment"></i>Comment</li>
+                <li><i class="fas fa-share"></i>Share</li>
+            </ul>
+            <div class="comment" id="comment6" style="display: none;"><img src="profile.jpg" alt="Profile.jpg"><input
+                    type="text" placeholder="Write a comment..."></div>
+        </div> -->
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#theme").click(function () {
+                $("body").toggleClass("toggleClassBackground");
+            });
+            $("#icn").mousedown(function () {
+                $(this).toggleClass("change");
+            });
+            $("#icn").mouseup(function () {
+                $(this).toggleClass("change");
+            });
+            $("#SbtnS").click(function () {
+                $("#Sfill").toggle("slow");
+            });
+            $(".dp").click(function (e) {
+                $("#info").slideToggle();
+            });
+            $("#one").click(function () {
+                $(this).addClass('active');
+                $("#two, #three").removeClass("active");
+            });
+            $("#two").click(function () {
+                $(this).addClass('active');
+                $("#one, #three").removeClass("active");
+            });
+            $("#three").click(function () {
+                $(this).addClass('active');
+                $("#two, #one").removeClass("active");
+            });
+            $("#Nbtn").click(function () {
+                $("#notifications").slideToggle();
+                $("#profile").hide('slow');
+                $("#info").slideUp();
+                $("#Pbtn").removeClass("active2");
+                if ($(this).hasClass("active2")) {
+                    $(this).removeClass("active2");
+                } else {
+                    $(this).addClass("active2");
+                }
+            });
+            $("#back1").click(function () {
+                $("#notifications").slideUp();
+                $("#Nbtn").removeClass("active2");
+                $("#Pbtn").removeClass("active2");
+            });
+            $("#back2").click(function () {
+                $("#profile").slideUp();
+                $("#Pbtn").removeClass("active2");
+            });
+            $("#back3").click(function () {
+                $("#info").slideUp();
+            });
+            $("#Pbtn").click(function () {
+                $("#profile").slideToggle();
+                $("#notifications").hide('slow')
+                $("#info").slideUp();
+                $("#Nbtn").removeClass("active2");
+                if ($(this).hasClass("active2")) {
+                    $(this).removeClass("active2");
+                } else {
+                    $(this).addClass("active2");
+                }
+            });
+            $(".main").click(function () {
+                $("#profile, #notifications").slideUp();
+                $("#Nbtn, #Pbtn").removeClass("active2");
+                $("#info").slideUp();
+            });
+            document.addEventListener('keydown', function (event) {
+                const key = event.key;
+                if (key == "Escape") {
+                    $("#Sfill").hide("slow");
+                    $("#notifications, #profile").slideUp();
+                    $("#Nbtn, #Pbtn").removeClass("active2");
+                    $("#profileimg").removeClass('max2');
+                    $("#info").slideUp();
+                }
+            });
+            document.addEventListener('keydown', function (event) {
+                const key = event.key;
+                if (key == "Enter") {
+                    $("#Sfill").hide("slow");
+                }
+            });
+            $("#profileBackImage").click(function () {
+                $(this).toggleClass("max");
+                $("#profileimg").toggle();
+            });
+            $("#profileimg").click(function () {
+                $(this).toggleClass("max2");
+            });
+            var like = document.getElementsByClassName("like");
+            var music = new Audio("sound/Sweet.ogg");
+            $("#lNewOne").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cNewOne").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cNewOne").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cNewOne").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#lNewTwo").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cNewTwo").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cNewTwo").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cNewTwo").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#lNewThree").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cNewThree").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cNewThree").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cNewThree").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#lOne").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cOne").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cOne").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cOne").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#lTwo").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cTwo").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cTwo").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cTwo").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#lThree").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cThree").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cThree").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cThree").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#lFour").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cFour").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cFour").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cFour").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#lFive").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cFive").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cFive").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cFive").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#lSix").click(function () {
+                $(this).toggleClass("like");
+                if ($("#cSix").html() == '<i class="fas fa-thumbs-up"></i> 1') {
+                    $("#cSix").html('<i class="fas fa-thumbs-up"></i> 0');
+                } else {
+                    $("#cSix").html('<i class="fas fa-thumbs-up"></i> 1');
+                    music.play();
+                }
+            });
+            $("#commentNewOne").click(function () {
+                $("#commentNew1").slideToggle("slow");
+            });
+            $("#commentNewTwo").click(function () {
+                $("#commentNew2").slideToggle("slow");
+            });
+            $("#commentNewThree").click(function () {
+                $("#commentNew3").slideToggle("slow");
+            });
+            $("#commentOne").click(function () {
+                $("#comment1").slideToggle("slow");
+            });
+            $("#commentTwo").click(function () {
+                $("#comment2").slideToggle("slow");
+            });
+            $("#commentThree").click(function () {
+                $("#comment3").slideToggle("slow");
+            });
+            $("#commentFour").click(function () {
+                $("#comment4").slideToggle("slow");
+            });
+            $("#commentFive").click(function () {
+                $("#comment5").slideToggle("slow");
+            });
+            $("#commentSix").click(function () {
+                $("#comment6").slideToggle("slow");
+            });
+            $("#pImage1").click(function () {
+                $(this).toggleClass("postImage");
+            });
+            $("#pImage2").click(function () {
+                $(this).toggleClass("postImage");
+            });
+            $("#pImage3").click(function () {
+                $(this).toggleClass("postImage");
+            });
+            $("#pImage4").click(function () {
+                $(this).toggleClass("postImage");
+            });
+            $("#pImage5").click(function () {
+                $(this).toggleClass("postImage");
+            });
+            $("#pImage6").click(function () {
+                $(this).toggleClass("postImage");
+            });
+        });
+    </script>
+</body>
+
+</html>

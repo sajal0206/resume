@@ -1,0 +1,963 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    overflow: auto;
+    background: #f0f2f5;
+}
+body::-webkit-scrollbar{
+    width: .5rem;
+    
+}
+body::-webkit-scrollbar-thumb{
+    background: #3a3a3b;
+    border-radius: 2rem;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 3.8rem;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    border-radius: 0.1rem;
+    background: #fff;
+    box-shadow: 0 0 1rem #a0a0a3;
+    text-align: center;
+    margin-block-end: 1rem;
+    user-select: none;
+    -moz-user-select: none;
+}
+.navbar .icons{
+    display: inline;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    transform: translate(-50%);
+    width: max-content;
+}
+.navbar .icons ul{
+    list-style: none;
+}
+.navbar .icons ul li{
+    display: inline;
+}
+.navbar .logo ul{
+    list-style: none;
+}
+.navbar .logo ul li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#Sbtn{
+    background: #e4e6eb;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2rem;
+    box-shadow: 0 0 0.2rem 0.01rem #133f6b;
+}
+.navbar .logo ul li i:hover, #Sbtn:hover{
+    color: #373ba1;
+}
+.navbar .logo #Sbtn input{
+    width: 5.5rem;
+    display: none;
+    margin-inline-start: 1rem;
+    border: none;
+    background: transparent;
+    border-bottom: solid;
+    font-weight: bold;
+}
+.navbar .logo ul li i{
+    font-size: large;
+    color: #000;
+    cursor: pointer;
+    width: 0.3rem;
+    height: 0.3rem;
+    display: flex;
+    margin-inline: 0.5rem;
+    margin-top: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .icons i:hover{
+    background: #e4e6eb;
+}
+.navbar .logo ul li a{
+    background: #3981ca71;
+    text-decoration: none;
+    margin: 0.8rem 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #373ba1;
+    text-shadow: 0.1rem 0.1rem 0.2rem;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0 #2d3085;
+}
+.navbar .logo ul li a p{
+    transform: scale(1.5);
+}
+.change{
+    box-shadow: 0.1rem 0.3rem 0.5rem 0 #ce2828c9 !important;
+    text-shadow: 0.2rem 0.2rem 0.2rem #c23030c5 !important;
+    color: #832f2f !important;
+}
+.navbar i{
+    margin-inline: 2rem;
+    font-size: x-large;
+    color: #4b4848;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: all 0.2s;
+    padding-bottom: 1.3rem;
+    z-index: 2;
+}
+.active i{
+    color: #0776e8;
+    border-radius: 0;
+    padding-bottom: 1.1rem;
+    border-bottom: solid #0776e8 0.2rem;
+}
+.active i:hover{
+    background: #fff !important;
+    cursor: default;
+}
+.navbar .dp{
+    position: absolute;
+    right: 10%;
+    display: inline-flex;
+    align-items: center;
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 550;
+    cursor: pointer;
+    border-radius: 2rem;
+    padding-inline-end: 0.5rem;
+    transition: all 0.1s;
+    color: #000;
+}
+.navbar .dp:hover{
+    background: #e4e6ebb4;
+}
+.navbar .dp img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0.2rem 0.5rem;
+}
+.Ricons{
+    position: absolute;
+    right: 1rem;
+}
+.Ricons ul{
+    list-style-type: none;
+}
+.Ricons ul li{
+    display: inline-flex;
+}
+.Ricons ul li i{
+    font-size: large;
+    color: #000;
+    margin-inline: 0.1rem;
+    background: #e4e6eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+.Ricons ul li .fa-bell{
+    transform: rotateZ(-10deg);
+}
+.Ricons ul li i:hover{
+    background: #53535388;
+    color: #161616;
+}
+.active2{
+    background: #e6f2fe !important;
+    color: #0776e8 !important;
+}
+.rightBox{
+    position: fixed;
+    right: 1rem;
+    top: 4.5rem;
+    background: #fff;
+    width: 20rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem 0 #00000052;
+    padding: 1rem 0.5rem;
+    display: none;
+    z-index: 2;
+}
+.back{
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+.back:hover{
+    background: #000000;
+    color: #fff;
+}
+.upper{
+    height: 20rem;
+    border: solid;
+    border-radius: 1rem;
+    margin-block-start: 1rem;
+}
+.upper ul{
+    margin-inline: 1rem;
+    list-style-type: none;
+    font-weight: bold;
+}
+.upper ul li{
+    margin-block: 1.5rem;
+}
+#profile a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+#profile a .dp{
+    width: 95%;
+    height: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition: all 0.2s;
+}
+#profile a .dp:hover{
+    background: #e8e8e8;
+}
+#profile .profilebox{
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-block: 0.3rem;
+    list-style: none;
+}
+#profile .profilebox li{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding-block: 0.5rem;
+    transition: all 0.2s;
+    margin-block: 0.3rem;
+}
+#profile .profilebox li:hover{
+    background: #e8e8e8;
+}
+#profile .profilebox li i{
+    margin-inline: 1rem;
+    margin-inline-start: .2rem;
+    background: #e8e8e8;
+    padding: 0.5rem;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 2rem;
+}
+#profile .profilebox li i i{
+    margin-inline: 0;
+    background: none;
+}
+#profile .dp{
+    display: inline-flex;
+    align-items: center;
+    font-size: x-large;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-block-end: 0.5rem;
+}
+#profile .dp img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-inline-end: 1rem;
+}
+#profile hr{
+    color: #00000050;
+    border: solid 0.1rem;
+    border-radius: 50rem;
+}
+#notifications{
+    height: 35rem;
+    overflow: auto;
+}
+#notifications::-webkit-scrollbar{
+    width: 0.5rem;
+}
+#notifications::-webkit-scrollbar-thumb{
+    background: #cccbcb;
+    border-radius: 2rem;
+}
+#notifications .heading{
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-block-end: 1rem;
+}
+#notifications ul{
+    list-style: none;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.5rem;
+}
+#notifications ul li{
+    display: flex;
+    align-items: center;
+    color: #616164;
+}
+#notifications ul li img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-inline-end: 0.5rem;
+}
+#notifications small{
+    color: #0776e8;
+    font-weight: bolder;
+    margin-inline-start: 4rem;
+    width: 100%;
+}
+#notifications ul:hover{
+    background: #e4e6eb;
+}
+.toggleClassBackground{
+    background: #3a3a3b;
+}
+.toggleClassBackground i{
+    color: #ffffffc7;
+}
+.toggleClassBackground::-webkit-scrollbar-thumb{
+    background: #cccbcb;
+}
+.toggleClassBackground .navbar{
+    background: #3a3a3b;
+    box-shadow: 0 0 0.5rem 0 #000;
+}
+.toggleClassBackground .navbar .dp{
+    color: #fff;
+}
+.toggleClassBackground .navbar .dp:hover{
+    background: #313132;
+}
+.toggleClassBackground .navbar .logo ul li a{
+    background: #cccbcbde;
+}
+.toggleClassBackground .navbar .logo ul li i{
+    color: #cccbcb;
+}
+.toggleClassBackground .navbar .logo ul li i:hover{
+    color: #0776e8;
+}
+.toggleClassBackground #Sbtn{
+    background: #313132;
+}
+.toggleClassBackground #Sbtn input{
+    color: #fff;
+}
+.toggleClassBackground .active i:hover{
+    background: #3a3a3b !important;
+}
+.toggleClassBackground .active i{
+    color: #0776e8;
+}
+.toggleClassBackground .navbar .icons i:hover{
+    background: #313132;
+}
+.toggleClassBackground .rightBox{
+    background: #3a3a3b;
+    color: #ffffffc7;
+}
+.toggleClassBackground #profile a{
+    color: #ffffffc7;
+}
+.toggleClassBackground #profile a div:hover{
+    background: #313132;
+}
+.toggleClassBackground #profile .profilebox li i{
+    background: #313132;
+}
+.toggleClassBackground #profile .profilebox li i i{
+    background: none;
+}
+.toggleClassBackground #profile .profilebox li:hover{
+    background: #313132;
+}
+.toggleClassBackground #notifications ul li{
+    color: #cccbcb;
+}
+.toggleClassBackground #notifications ul:hover{
+    background: #313132;
+}
+.toggleClassBackground #notifications::-webkit-scrollbar-thumb{
+    background: #646468;
+    border-radius: 2rem;
+}
+.toggleClassBackground .Ricons i{
+    color: #cccbcb;
+    background: #313132;
+}
+.toggleClassBackground .active2{
+    background: #31313262 !important;
+}
+.toggleClassBackground #profile hr{
+    color: #cccbcb;
+}
+.main{
+    width: 100%;
+    height: max-content;
+    position: relative;
+    top: 5rem;
+    left: 0;
+    background: #f0f2f5;
+    padding-bottom: 18rem;
+}
+.toggleClassBackground .main{
+    background: #3a3a3b;
+}
+.main .extraLeft{
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 20rem;
+    border: solid 0.1rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+.main .extraLeft ul{
+    list-style: none;
+}
+.main .extraLeft ul li{
+    margin-block: 2rem;
+    font-size: large;
+    border-bottom: 0.1rem solid;
+    padding-bottom: 0.5rem;
+}
+.main .extraLeft ul li i{
+    font-size: xx-large;
+    color: #474242;
+}
+.toggleClassBackground .main .extraRight{
+    color: #b9ecec;
+}
+.toggleClassBackground .main .extraRight ul li i{
+    color: #0776e8;
+}
+.toggleClassBackground .main .extraLeft{
+    color: #b9ecec;
+}
+.toggleClassBackground .main .extraLeft ul li i{
+    color: #0776e8;
+}
+.main .extraRight{
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    text-align: left;
+    width: 20rem;
+    border: solid 0.1rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+.main .extraRight .heading{
+    margin-block-start: 1rem;
+}
+.main .extraRight ul{
+    list-style: none;
+}
+.main .extraRight ul li{
+    margin-block: 2rem;
+    font-size: large;
+    border-bottom: 0.1rem solid;
+    padding-bottom: 0.5rem;
+}
+.main .extraRight ul li i{
+    font-size: xx-large;
+    color: #474242;
+}
+.main .hiddenExtraLeft{
+    display: none;
+}
+.main .hiddenExtraRight{
+    display: none;
+}
+.main .topHeading{
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    text-decoration: underline;
+    text-shadow: 0 0 0.2rem #0776e8;
+}
+.main .profileBack{
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem 0 #000000b6;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.max{
+    width: 90% !important;
+    height: 40rem !important;
+    box-shadow: 0 0 100rem 10rem !important;
+    position: absolute !important;
+    transition: all 0.2s;
+    z-index: 5 !important;
+}
+.max img{
+    height: 45rem !important;
+}
+.main .profileimg{
+    width: 10rem;
+    height: 10rem;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: solid 0.2rem #0776e8;
+    box-shadow: 0 0 0.5rem 0.3rem #000000b2;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.main .card{
+    width: 40%;
+    height: max-content;
+    position: relative;
+    left: 50%;
+    top: 16rem;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0;
+    margin-block: 1rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0 0.2rem 0.1rem #0000001c;
+    transition: all 0.2s;
+}
+.main .card .heading{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+.toggleClassBackground .main .card .heading{
+    color: #fff;
+}
+.main .card .highlight{
+    font-size: x-large;
+}
+.toggleClassBackground .main .card .highlight{
+    color: #b9ecec;
+}
+.main .card .highlight i{
+    font-size: xx-large;
+    color: #ff3d3d;
+}
+.main .card .education{
+    width: 100%;
+}
+.toggleClassBackground .main .card .education{
+    color: #fff;
+}
+.main .card .education table{
+    width: 100%;
+    padding: 0.5rem;
+}
+.main .card .education table tr{
+    transition: all 0.2s;
+}
+.main .card .education #fix:hover{
+    transform: none;
+    background: none;
+}
+.main .card .education table tr:hover{
+    transform: scale(1.1);
+    background: #0000003f;
+    cursor: pointer;
+}
+.main .card .education table th{
+    background: #6d7e7e;
+    color: #fff;
+}
+.main .card .education table td, .main .card .education table th{
+    border: solid 0.1rem #918383;
+    text-align: center;
+    padding-block: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0.2rem;
+}
+.main .card .skills{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.toggleClassBackground .main .card h3{
+    color: #fff;
+}
+.main .card .skills ul{
+    list-style-type: none;
+}
+.main .card .skills ul li{
+    display: inline-block;
+    margin: 0.2rem;
+    padding: 0.5rem;
+    background:#b9ecec;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .2s;
+    border: solid transparent 0.1rem;
+}
+.toggleClassBackground .main .card .skills ul li{
+    color: #fff;
+    background: #832f2f;
+}
+.main .card .skills ul li:hover{
+    transform: scale(1.2);
+    transition: all .2s;
+    z-index: 2;
+    border: solid 0.1rem #6d7e7e;
+}
+.toggleClassBackground .main .card .education table td, .toggleClassBackground .main .card .education table th{
+    border: 0.1rem solid #ffffff9c;
+}
+.toggleClassBackground .main .card{
+    background: #313132;
+    box-shadow: 0 0 0.2rem 0 #46454586;
+}
+.main .card .cardTop{
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+.main .card .cardTop ul{
+    list-style: none;
+}
+.toggleClassBackground .main .card .cardTop ul{
+    color: #cccbcb;
+}
+.main .card .cardTop ul li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+    margin-block: 0.5rem;
+}
+.main .card .cardTop ul li:hover{
+    text-decoration: underline;
+}
+.main .card .cardTop ul li img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-inline: 0.5rem;
+}
+.main .card img{
+    width: 100%;
+    height: 38rem;
+    cursor: pointer;
+    border-block: solid 0.1rem #d4d6d9;
+    transition: all 0.2s;
+}
+.toggleClassBackground .main .card img{
+    border-block: solid 0.1rem #3a3a3b;
+}
+.main .card .count{
+    display: flex;
+    align-items: center;
+    margin-inline: 1rem;
+    font-weight: bold;
+    margin-block: 0.5rem;
+}
+.toggleClassBackground .main .card .count{
+    color: #cccbcb;
+}
+.main .card .count i{
+    color: #fff;
+    background: #3a3fd1;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    margin-inline: 0.5rem;
+}
+.main .card .cardBottom{
+    list-style: none;
+    border-block: solid 0.1rem #d4d6d9;
+    padding: 0.8rem 0;
+    margin-inline: 1rem;
+}
+.toggleClassBackground .main .card .cardBottom{
+    border-block: solid 0.1rem #3a3a3b;
+}
+.main .card .cardBottom li{
+    display: inline;
+    width: 100%;
+    padding: 0.5rem;
+    padding-inline: 7%;
+    margin-block: 0.2rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #000000af;
+    font-weight: bold;
+    user-select: none;
+    -moz-user-select: none;
+}
+.toggleClassBackground .main .card .cardBottom li{
+    color: #cdcdcd;
+}
+.main .card .cardBottom li i{
+    color: transparent;
+    -webkit-text-stroke: 0.1rem #000000af;
+    margin-inline: 0.5rem;
+    font-size: large;
+}
+.toggleClassBackground .main .card .cardBottom li i{
+    -webkit-text-stroke: 0.1rem #cdcdcd;
+}
+.like{
+    color: #0776e8 !important;
+}
+.like i{
+    color: #0776e8 !important;
+    -webkit-text-stroke: 0 !important;
+}
+.main .card .cardBottom li:hover{
+    background: #e4e6ebb0;
+}
+.toggleClassBackground .main .card .cardBottom li:hover{
+    background-color: #3a3a3b;
+}
+.card .comment{
+    display: inline-flex;
+    height: 3rem;
+    margin-block: 1rem 0;
+    width: 100%;
+}
+.card .comment img{
+    width: 2.5rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-inline: 1rem 0.5rem;
+}
+.card .comment input{
+    width: 100%;
+    height: 2rem;
+    border-radius: 2rem;
+    margin-inline-end: 1rem;
+    border: none;
+    background: #f0f2f5;
+    padding-inline: 0.5rem;
+}
+.toggleClassBackground .card .comment input{
+    background-color: #3a3a3b;
+    color: #fff;
+}
+.toggleClassBackground .card .comment input::placeholder{
+    color: #ffffff8e;
+}
+.main .fix{
+    position: relative;
+    top: 15rem;
+    height: 10rem;
+}
+.main .profileimg img{
+    width: 10rem;
+    height: 10rem;
+}
+.max2{
+    width: 50% !important;
+    height: 40rem !important;
+    border: none !important;
+    border-radius: 0.2rem !important;
+    box-shadow: 0 0 100rem 10rem !important;
+    position: absolute !important;
+    transition: all 0.2s;
+    z-index: 2 !important;
+}
+.max2 img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.main .profileBack img{
+    width: 100%;
+    height: 40rem;
+    position: absolute;
+    top: -5rem;
+}
+.postImage{
+    transform: scale(1.2);
+    box-shadow: 0 0 5rem 5rem #000000a8;
+    border-radius: 0.5rem;
+    z-index: 3000;
+    transition: all 0.2s;
+}
+@media screen and (max-width: 1260px) {
+    .navbar .dp{
+        display: none;
+    }
+    .navbar i{
+        margin-inline: 0.2rem;
+    }
+    .main .profileBack{
+        height: 12rem;
+    }
+    .main .fix{
+        top: 8rem;
+    }
+    .max2{
+        width: 70% !important;
+    }
+    .main .card{
+        top: 8rem;
+        width: 75%;
+    }
+    .main .extraLeft, .main .extraRight{
+        display: none;
+    }
+    .main .hiddenCard{
+        display: block;
+        justify-content: center;
+        padding-block: 1rem;
+    }
+    .main .hiddenExtraLeft{
+        text-align: left;
+        width: 50%;
+        border: solid 0.1rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        display: block;
+        margin-block: 1rem;
+        position: relative;
+        left: 20%;
+    }
+    .main .hiddenExtraLeft ul{
+        list-style: none;
+    }
+    .main .hiddenExtraLeft ul li{
+        margin-block: 2rem;
+        font-size: large;
+        border-bottom: 0.1rem solid;
+        padding-bottom: 0.5rem;
+    }
+    .main .hiddenExtraLeft ul li i{
+        font-size: xx-large;
+        color: #474242;
+    }
+    .toggleClassBackground .main .hiddenExtraRight{
+        color: #b9ecec;
+    }
+    .toggleClassBackground .main .hiddenExtraRight ul li i{
+        color: #0776e8;
+    }
+    .toggleClassBackground .main .hiddenExtraLeft{
+        color: #b9ecec;
+    }
+    .toggleClassBackground .main .hiddenExtraLeft ul li i{
+        color: #0776e8;
+    }
+    .main .hiddenExtraRight{
+        text-align: left;
+        width: 50%;
+        border: solid 0.1rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+        display: block;
+        margin-block: 1rem;
+        position: relative;
+        left: 20%;
+    }
+    .main .hiddenExtraRight .heading{
+        margin-block-start: 1rem;
+    }
+    .main .hiddenExtraRight ul{
+        list-style: none;
+    }
+    .main .hiddenExtraRight ul li{
+        margin-block: 2rem;
+        font-size: large;
+        border-bottom: 0.1rem solid;
+        padding-bottom: 0.5rem;
+    }
+    .main .hiddenExtraRight ul li i{
+        font-size: xx-large;
+        color: #474242;
+    }
+}
+@media screen and (max-width: 736px) {
+    #Sbtn{
+        display: none;
+    }
+    .max{
+        height: 20rem !important;
+    }
+    .max img{
+        height: 25rem !important;
+    }
+    .max2{
+        height: 25rem !important;
+    }
+    .postImage{
+        transform: scaleX(1.2);
+        height: 40rem !important;
+    }
+}
+@media screen and (max-width: 656px) {
+    .main .card .cardBottom li{
+        padding-inline: 5%;
+    }
+    .main .card .cardBottom li i{
+        margin-inline: 0.5%;
+        padding-inline: 0;
+    }
+}
+@media screen and (max-width: 508px) {
+    .main .card .cardBottom li{
+        padding-inline: 2%;
+    }
+    .navbar i{
+        margin-inline: 0;
+        padding-inline: 0.5rem;
+    }
+    .main .card img{
+        height: 25rem;
+    }
+    .card .comment img{
+        height: 2rem;
+    }
+    .postImage{
+        transform: scaleX(1.2);
+        height: 30rem !important;
+    }
+    .main .card .education table td, .main .card .education table th{
+        font-size: small;
+    }
+    .main .hiddenExtraLeft{
+        width: 50%;
+    }
+    .main .hiddenExtraRight{
+        width: 50%;
+    }
+}
